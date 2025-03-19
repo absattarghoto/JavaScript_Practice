@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Get User Input</title>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="Enter your name">
+    <button onclick="displayInput()">Submit</button>
+    <p id="output"></p>
+
+    <script>
+        function displayInput() {
+            let inputValue = document.getElementById("userInput").value;
+            document.getElementById("output").textContent = "Hello, " + inputValue + "!";
+        }
+    </script>
+</body>
+</html>

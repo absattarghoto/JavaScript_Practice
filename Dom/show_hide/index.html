@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Show & Hide Elements</title>
+</head>
+<body>
+    <p id="text">This is a paragraph.</p>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+
+    <script>
+        function toggleVisibility() {
+            let para = document.getElementById("text");
+            if (para.style.display === "none") {
+                para.style.display = "block";
+            } else {
+                para.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
