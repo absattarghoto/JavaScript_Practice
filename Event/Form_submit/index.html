@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Submit Event</title>
+</head>
+<body>
+    <form onsubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevents page reload
+            let name = document.getElementById("name").value;
+            document.getElementById("result").textContent = "Hello, " + name + "!";
+        }
+    </script>
+</body>
+</html>

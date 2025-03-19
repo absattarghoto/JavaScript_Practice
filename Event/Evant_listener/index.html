@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>addEventListener Example</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <p id="text"></p>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function() {
+            document.getElementById("text").textContent = "Button Clicked using addEventListener!";
+        });
+    </script>
+</body>
+</html>

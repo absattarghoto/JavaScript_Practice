@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Keypress Event</title>
+</head>
+<body>
+    <input type="text" onkeypress="showKey(event)" placeholder="Type something">
+    <p id="output"></p>
+
+    <script>
+        function showKey(event) {
+            document.getElementById("output").textContent = "You pressed: " + event.key;
+        }
+    </script>
+</body>
+</html>
